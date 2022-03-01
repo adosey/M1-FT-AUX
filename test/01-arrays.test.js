@@ -33,7 +33,7 @@ describe('sumaDeArrays(array)', function() {
 });
 
 
-xdescribe('mismoValorMismosElementos(numero, divisor)', function() {
+describe('mismoValorMismosElementos(numero, divisor)', function() {
     it('Deberia retornar un array con la misma cantidad de elemento que el divisor y cada uno de los elementos del mismo valor', function (){
         expect(mismoValorMismosElementos(10, 2)).toEqual([5, 5])
         expect(mismoValorMismosElementos(13, 7)).toBeFalsy()

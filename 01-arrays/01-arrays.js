@@ -86,7 +86,11 @@ function mismoValorMismosElementos(numero, divisor) {
     // Todos los elementos deben tener el mismo valor
     // OJO: Si el resultado de la division no es un entero, deben devolver false
     let array = new Array(divisor);
-    array.forEach(elem =>{if(numero%divisor === 0) elem = numero/divisor })
+    for (let index = 0; index < array.length; index++) {
+        if(numero%divisor === 0) 
+        array[index] = numero/divisor;
+        else return false    
+    }
     return array 
 };
 
