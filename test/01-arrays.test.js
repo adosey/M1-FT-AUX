@@ -41,7 +41,7 @@ describe('mismoValorMismosElementos(numero, divisor)', function() {
     })
 });
 
-xdescribe('elementoMenorYMayor(array)', function() {
+describe('elementoMenorYMayor(array)', function() {
     it('Deberia retornar un array solo con el elemento menor y mayor que recibe por parametro', function (){
         expect(elementoMenorYMayor([10, 15, 24])).not.toContain(15)
         expect(elementoMenorYMayor([2, 4, 9, 1])).not.toContain(4)

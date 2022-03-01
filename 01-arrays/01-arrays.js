@@ -99,7 +99,17 @@ function elementoMenorYMayor(array) {
     // El Array recibido por props es un array que contienen numeros
     // Tenes que retornar un array
     // Solamente con el elemento menor y mayor del array recibido
-    
+    let min = array[0]
+    let max = array[0]
+    for (let index = 1; index < array.length; index++) {
+         if(array[index] < min )
+            min = array[index];
+         else if(array[index] > max)
+            max = array[index];
+         else return;
+        
+    }
+    return [min,max];
 };
 
 
