@@ -38,14 +38,22 @@ return newArray;
 function numeroEnComun(array1, array2) {
     // Entre los dos array's que recibe la funcion por parametro
     // Buscar y retornar el valor en comun entre ellos
-//     let newArray = []
-//     array1.forEach(element => {
-//         for (const value of array2) {
-//             if(element === value)
-//             newArray.push(element);
-//         }
-//     });
-//    return newArray;
+    //observar consola de git para otros requerimientos
+    let comun ;
+    let min = array1[0] ;
+    array1.forEach(element => {
+        if(element < min) min = element;
+        for (const value of array2) {
+            if(element === value)
+                comun = element;
+            if(value < min) min = value
+        }
+    });
+    if (comun === undefined)
+        return min;
+    else 
+       return comun;
+   
 };
 
 
