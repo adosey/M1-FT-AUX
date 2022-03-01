@@ -25,7 +25,7 @@ describe('numeroEnComun(array1, array2)', function() {
 });
 
 
-xdescribe('sumaDeArrays(array)', function() {
+describe('sumaDeArrays(array)', function() {
     it('Deberia retornar un array solo con elementos de tipo numero', function() {
       expect(sumaDeArrays([[1, 3], [10, 20], [4, 5], 2])).toEqual([4, 30, 9, 2])
       expect(sumaDeArrays([[5, 5], 4, [10, 15], [25, 10]])).toEqual([10, 4, 25, 35])

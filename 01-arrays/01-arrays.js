@@ -63,7 +63,21 @@ function sumaDeArrays(array) {
     // Tienen que devolver UN SOLO array que solo contenga elementos de tipo number
     // Sumando los elementos de cada array que contenga dos elementos, y devolviendo la suma del mismo
     // OJO: Si el elemento dentro del array que ingresa por prop, ya es de tipo number, deben devolverlo como tal dentro del array que retornan.
-   
+let newArray = [];
+let suma;
+for (const element of array) {
+    if(Array.isArray(element)){
+        suma = 0;
+        for (let index = 0; index < element.length; index++) {
+            
+            suma = suma + element[index];  
+        }
+    }else{
+        suma = element;
+    }
+newArray.push(suma);   
+}
+return newArray;  
 };
 
 
@@ -71,7 +85,9 @@ function mismoValorMismosElementos(numero, divisor) {
     // Tiene que devolver un array con la misma cantidad de elementos que el valor del divisor
     // Todos los elementos deben tener el mismo valor
     // OJO: Si el resultado de la division no es un entero, deben devolver false
-
+    let array = new Array(divisor);
+    array.forEach(elem =>{if(numero%divisor === 0) elem = numero/divisor })
+    return array 
 };
 
 
