@@ -4,7 +4,7 @@ const { BinarySearchTree } = require("../07-Arboles/07-Arboles")
 
 
 
-describe("Search", function () {
+xdescribe("Search", function () {
     var tree = new BinarySearchTree(1)
     tree.insert(2)
     tree.insert(3)
@@ -23,7 +23,7 @@ describe("Search", function () {
 });
 
 
-describe("Height", function () {
+xdescribe("Height", function () {
      tree = new BinarySearchTree(1)
      tree.insert(2)
      tree.insert(3)

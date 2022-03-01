@@ -5,15 +5,47 @@ function invertirOrden(array) {
     //
     // DETALLE: En caso de que el elemento contenga mas de 1 digito, el mismo NO debera ser devuelto
     // No vale usar el metodo "reverse"
-    
- 
+//     let newArray = [];
+//     for(let i=0;i<array.length;i++){
+//         if(array[i]<10){
+//             newArray.unshift(array[i]);
+//         }
+//     }
+//  return newArray;
+//-------------------------------------------------------------------------
+// let newArray = [];
+// for(let i=array.length - 1;i>=0;i--){
+//     if(array[i]<10)
+//     newArray.push(array[i]);
+// }
+// return newArray;
+//-------------------------------------------------------------------------
+// let newArray = [];
+// array.forEach(element => {
+//     if(element < 10) newArray.unshift(element);
+// });
+// return newArray;
+//-------------------------------------------------------------------------
+let newArray = [];
+for(let element of array){
+    if(element <10) newArray.unshift(element);
+}
+return newArray;
+
 };
 
 
 function numeroEnComun(array1, array2) {
     // Entre los dos array's que recibe la funcion por parametro
     // Buscar y retornar el valor en comun entre ellos
-   
+//     let newArray = []
+//     array1.forEach(element => {
+//         for (const value of array2) {
+//             if(element === value)
+//             newArray.push(element);
+//         }
+//     });
+//    return newArray;
 };
 
 

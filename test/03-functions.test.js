@@ -3,7 +3,7 @@ const {
 } = require('../03-Functions/03-Functions')
 
 
-describe('timeConversion(time)', function() {
+xdescribe('timeConversion(time)', function() {
     it('Deberia retornar la hora en formato 24hs', function() {
       expect(timeConversion("03:15:00PM")).toBe("15:15:00");
       expect(timeConversion("01:12:31AM")).toBe("01:12:31")

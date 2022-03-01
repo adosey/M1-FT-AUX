@@ -11,14 +11,14 @@ let obj = {
     },
   },
 };
-describe("producto(array)", function () {
+xdescribe("producto(array)", function () {
   it("Should return the product of all numbers within the array", function () {
     expect(producto([7, 9, 3])).toBe(189);
     expect(producto([11, 22, 33])).toBe(7986);
     expect(producto([22, 9, 3])).toBe(594);
   });
 });
-describe("isThere(obj, value)", function () {
+xdescribe("isThere(obj, value)", function () {
   it("Should return true or false", function () {
     expect(isThere(obj, 22)).toBe(false);
   });

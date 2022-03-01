@@ -25,7 +25,7 @@ describe('numeroEnComun(array1, array2)', function() {
 });
 
 
-describe('sumaDeArrays(array)', function() {
+xdescribe('sumaDeArrays(array)', function() {
     it('Deberia retornar un array solo con elementos de tipo numero', function() {
       expect(sumaDeArrays([[1, 3], [10, 20], [4, 5], 2])).toEqual([4, 30, 9, 2])
       expect(sumaDeArrays([[5, 5], 4, [10, 15], [25, 10]])).toEqual([10, 4, 25, 35])
@@ -33,7 +33,7 @@ describe('sumaDeArrays(array)', function() {
 });
 
 
-describe('mismoValorMismosElementos(numero, divisor)', function() {
+xdescribe('mismoValorMismosElementos(numero, divisor)', function() {
     it('Deberia retornar un array con la misma cantidad de elemento que el divisor y cada uno de los elementos del mismo valor', function (){
         expect(mismoValorMismosElementos(10, 2)).toEqual([5, 5])
         expect(mismoValorMismosElementos(13, 7)).toBeFalsy()
@@ -41,7 +41,7 @@ describe('mismoValorMismosElementos(numero, divisor)', function() {
     })
 });
 
-describe('elementoMenorYMayor(array)', function() {
+xdescribe('elementoMenorYMayor(array)', function() {
     it('Deberia retornar un array solo con el elemento menor y mayor que recibe por parametro', function (){
         expect(elementoMenorYMayor([10, 15, 24])).not.toContain(15)
         expect(elementoMenorYMayor([2, 4, 9, 1])).not.toContain(4)

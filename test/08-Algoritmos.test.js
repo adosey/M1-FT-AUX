@@ -7,7 +7,7 @@ const {
   } = require('../08-Algoritmos/08-Algoritmos.js');
   
 
-  describe('bubbleSort(array)', function() {
+  xdescribe('bubbleSort(array)', function() {
     it('Debe retornar el array ordenado de menor a mayor', function() {
       expect(bubbleSort([5, 1, 4, 2, 8])).toEqual([1, 2, 4, 5, 8]);
       expect(bubbleSort([10, 10, 16, 12])).toEqual([10, 10, 12, 16]);
@@ -15,7 +15,7 @@ const {
     });
   });
   
-  describe('insertionSort(array)', function() {
+  xdescribe('insertionSort(array)', function() {
     it('Debe retornar el array ordenado de menor a mayor', function() {
       expect(insertionSort([5, 1, 4, 2, 8])).toEqual([1, 2, 4, 5, 8]);
       expect(insertionSort([10, 10, 16, 12])).toEqual([10, 10, 12, 16]);
@@ -24,7 +24,7 @@ const {
   });
   
   
-  describe('selectionSort(array)', function() {
+  xdescribe('selectionSort(array)', function() {
     it('Debe retornar el array ordenado de menor a mayor', function() {
       expect(selectionSort([5, 1, 4, 2, 8])).toEqual([1, 2, 4, 5, 8]);
       expect(selectionSort([10, 10, 16, 12])).toEqual([10, 10, 12, 16]);
@@ -33,7 +33,7 @@ const {
   });
 
 
-  describe('quickSort(array)', function() {
+  xdescribe('quickSort(array)', function() {
     it('Debe retornar el array ordenado de menor a mayor', function() {
       expect(quickSort([5, 1, 4, 2, 8])).toEqual([1, 2, 4, 5, 8]);
       expect(quickSort([10, 10, 16, 12])).toEqual([10, 10, 12, 16]);
@@ -41,7 +41,7 @@ const {
     });
   });
   
-  describe('mergeSort(array)', function() {
+  xdescribe('mergeSort(array)', function() {
     it('Debe retornar el array ordenado de menor a mayor', function() {
       expect(mergeSort([5, 1, 4, 2, 8])).toEqual([1, 2, 4, 5, 8]);
       expect(mergeSort([10, 10, 16, 12])).toEqual([10, 10, 12, 16]);

@@ -3,7 +3,7 @@ const { expect } = require("chai");
 const { LinkedList } = require("../06 - LinkedList/06-LinkedList")
 
 
-describe("Size", function () {
+xdescribe("Size", function () {
     var linkedList = new LinkedList();
     it("Size Debe retornar 0 si la lista esta vacía", function () {
         expect(linkedList.size()).to.equal(0);      
@@ -23,7 +23,7 @@ describe("Size", function () {
   });
 
 
-describe("Order LinkedList", function () {
+xdescribe("Order LinkedList", function () {
   var linkedList = new LinkedList();
 
   it("Order Debe retornar una lista ordenada descendentemente", function () {
@@ -43,7 +43,7 @@ describe("Order LinkedList", function () {
   });
 });
 
-describe("Remove In Index", function () {
+xdescribe("Remove In Index", function () {
     var linkedList = new LinkedList();
   
     it("RemoveInIndex Debe eliminar el elemento indicado en el indice y retornarlo", function () {
