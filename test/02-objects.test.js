@@ -1,6 +1,6 @@
 const { crearClaseLibro, printStaff } = require("../02-Objects/02-Objects.js");
 
-xdescribe("Clase", function () {
+describe("Clase", function () {
   describe("crearClaseLibro", function () {
     it("should return a book constructor that correctly builds book objects", function () {
       const Libro = crearClaseLibro();
@@ -98,7 +98,7 @@ xdescribe("Clase", function () {
     });
   });
 });
-xdescribe("PrintStaff", function () {
+describe("PrintStaff", function () {
   const hogwarts = {
     staff: {
       headmaster: {
