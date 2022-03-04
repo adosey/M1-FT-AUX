@@ -4,7 +4,10 @@
 // producto([7, 2, 5]) devuelve 70
 const producto = function (array) {
   //escribe aqui tu codigo
-  
+  if(array.length === 1) return array[0]
+  let element = array.pop();
+  return element*producto(array)
+
 };
 
 // Dado un objeto con objetos anidados utilizar la recursión para crear una función

@@ -11,7 +11,7 @@ let obj = {
     },
   },
 };
-xdescribe("producto(array)", function () {
+describe("producto(array)", function () {
   it("Should return the product of all numbers within the array", function () {
     expect(producto([7, 9, 3])).toBe(189);
     expect(producto([11, 22, 33])).toBe(7986);
