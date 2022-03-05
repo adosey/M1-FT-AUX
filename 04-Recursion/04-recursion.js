@@ -18,7 +18,7 @@ const producto = function (array) {
 //         hogwarts: {
 //             headmaster:{
 //               name: {
-//                 first: "Albus",
+//                 first: "''Albus''",
 //                 last: "Dumbledore"
 //               }
 //             }
@@ -27,5 +27,13 @@ const producto = function (array) {
 // }
 const isThere = function (obj, value) {
   //escribe aqui tu codigo
+  for(const props in obj){
+    if(typeof obj[props] === 'object') 
+      return isThere(obj[props],value)
+    else if(obj[props] === value)
+    return true
+  }
+
+  return false
 };
 module.exports = { producto, isThere };
