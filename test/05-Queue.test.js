@@ -4,7 +4,7 @@ const expect = require("chai").expect;
 const { Queue } = require("../estructuras");
 const {controlAcces} = require("../05-Stack&queue/05-Queue")
 
-xdescribe("EJERCICIO 6: controlAcces", function () {
+describe("EJERCICIO 6: controlAcces", function () {
   var queue = new Queue();
 
   queue.enqueue({
